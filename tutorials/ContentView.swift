@@ -9,8 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    var x = 4.4
     var body: some View {
-        Text("Hello, World!")
+        Button("Hello World"){
+            print(type(of: self.body))
+            print(type(of: self.x))
+        }
+        .frame(width: 200, height: 200)
+        .background(Color.red)
+        
     }
 }
 
